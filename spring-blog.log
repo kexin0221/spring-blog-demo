@@ -8,3 +8,5 @@
 2025-11-26T21:14:15.205+08:00  INFO 57632 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 654 ms
 2025-11-26T21:14:15.539+08:00  INFO 57632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2025-11-26T21:14:15.545+08:00  INFO 57632 --- [main] c.b.s.SpringBlogDemoApplication          : Started SpringBlogDemoApplication in 1.478 seconds (process running for 2.017)
+2025-11-26T21:29:08.180+08:00  INFO 57632 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-26T21:29:08.309+08:00  INFO 57632 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
