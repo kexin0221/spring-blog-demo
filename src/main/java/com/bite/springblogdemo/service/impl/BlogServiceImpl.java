@@ -1,6 +1,7 @@
 package com.bite.springblogdemo.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.bite.springblogdemo.common.util.BeanParseUtils;
 import com.bite.springblogdemo.mapper.BlogInfoMapper;
 import com.bite.springblogdemo.pojo.dataobject.BlogInfo;
 import com.bite.springblogdemo.pojo.response.BlogInfoResponse;
@@ -22,10 +23,14 @@ public class BlogServiceImpl implements BlogService {
         QueryWrapper<BlogInfo> queryWrapper = new QueryWrapper<>();
         queryWrapper.lambda().eq(BlogInfo::getDeleteFlag, 0);
         List<BlogInfo> blogInfos = blogInfoMapper.selectList(queryWrapper);
-        return blogInfos.stream().map(x -> {
-            BlogInfoResponse response = new BlogInfoResponse();
-            BeanUtils.copyProperties(x, response);
-            return response;
-        }).collect(Collectors.toList());
+        return blogInfos.stream().map(BeanParseUtils::trans).collect(Collectors.toList());
+    }
+
+    @Override
+    public BlogInfoResponse getBlogDetail(Integer blogId) {
+        QueryWrapper<BlogInfo> queryWrapper = new QueryWrapper<>();
+        queryWrapper.lambda().eq(BlogInfo::getDeleteFlag, 0)
+                             .eq(BlogInfo::getId, blogId);
+        return BeanParseUtils.trans(blogInfoMapper.selectOne(queryWrapper));
     }
 }

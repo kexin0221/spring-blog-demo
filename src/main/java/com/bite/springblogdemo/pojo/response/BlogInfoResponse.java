@@ -14,4 +14,8 @@ public class BlogInfoResponse {
     private Integer deleteFlag;
     @JsonFormat(pattern = "yyyy年MM月dd日 HH:mm:ss")
     private LocalDateTime createTime;
+
+//    public String getContent() {
+//        return content == null ? "" : content;
+//    }
 }

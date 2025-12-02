@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.method.annotation.HandlerMethodValidationException;
 
 @Slf4j
 @ResponseBody
@@ -21,5 +22,11 @@ public class ExceptionAdvice {
     public Result exceptionHandler(BlogException e) {
         log.error("发生异常, e: ", e);
         return Result.fail(e.getMessage());
+    }
+
+    @ExceptionHandler
+    public Result exceptionHandler(HandlerMethodValidationException e) {
+        log.error("发生异常, e: {}", e.getMessage());
+        return Result.fail("参数校验失败");
     }
 }

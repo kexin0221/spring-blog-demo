@@ -55,7 +55,7 @@
                        finalHTML += '<div class="title">'+ bookInfo.title +'</div>'
                        finalHTML += '<div class="date">'+ bookInfo.createTime +'</div>'
                        finalHTML += '<div class="desc">'+ bookInfo.content +'</div>'
-                       finalHTML += '<a class="detail" href="blog_detail.html">查看全文&gt;&gt;</a>'
+                       finalHTML += '<a class="detail" href="blog_detail.html?blogId='+ bookInfo.id +'">查看全文&gt;&gt;</a>'
                        finalHTML += '</div>'
                    }
                    $(".container .right").html(finalHTML);
