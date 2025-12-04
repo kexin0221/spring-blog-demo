@@ -1239,3 +1239,29 @@ com.bite.springblogdemo.common.exception.BlogException: null
 2025-12-04T22:15:44.940+08:00  INFO 36144 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
 2025-12-04T22:15:44.946+08:00  INFO 36144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-12-04T22:15:44.949+08:00  INFO 36144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-04T22:18:10.100+08:00  INFO 17744 --- [main] c.b.s.SpringBlogDemoApplication          : Starting SpringBlogDemoApplication using Java 17.0.17 with PID 17744 (D:\code\java\spring-blog-demo\target\classes started by MouKexin in D:\code\java\spring-blog-demo)
+2025-12-04T22:18:10.102+08:00  INFO 17744 --- [main] c.b.s.SpringBlogDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T22:18:10.754+08:00  INFO 17744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-04T22:18:10.767+08:00  INFO 17744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T22:18:10.767+08:00  INFO 17744 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-04T22:18:10.803+08:00  INFO 17744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-04T22:18:10.804+08:00  INFO 17744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 676 ms
+2025-12-04T22:18:11.213+08:00  INFO 17744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T22:18:11.218+08:00  INFO 17744 --- [main] c.b.s.SpringBlogDemoApplication          : Started SpringBlogDemoApplication in 1.424 seconds (process running for 1.734)
+2025-12-04T22:18:17.937+08:00  INFO 17744 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T22:18:17.937+08:00  INFO 17744 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T22:18:17.938+08:00  INFO 17744 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-04T22:18:17.948+08:00  INFO 17744 --- [http-nio-8080-exec-1] c.b.s.c.interceptor.LoginInterceptor     : 获取token: null
+2025-12-04T22:18:42.823+08:00  INFO 17744 --- [http-nio-8080-exec-2] c.b.s.controller.UserController          : 用户登录，用户名: zhangsan
+2025-12-04T22:18:43.035+08:00  INFO 17744 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T22:18:43.490+08:00  INFO 17744 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c9d52ba
+2025-12-04T22:18:43.494+08:00  INFO 17744 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T22:18:52.165+08:00  INFO 17744 --- [http-nio-8080-exec-3] c.b.s.c.interceptor.LoginInterceptor     : 获取token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiJ9.3whFIL-TB1eV5VSG0AOk2cYLEBfBovXoPuthsOlkvOs
+2025-12-04T22:18:52.214+08:00  INFO 17744 --- [http-nio-8080-exec-3] c.b.s.controller.BlogController          : 查询博客列表...
+2025-12-04T22:18:56.976+08:00  INFO 17744 --- [http-nio-8080-exec-4] c.b.s.c.interceptor.LoginInterceptor     : 获取token: null
+2025-12-04T22:19:06.455+08:00  INFO 17744 --- [http-nio-8080-exec-5] c.b.s.c.interceptor.LoginInterceptor     : 获取token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiJ9.3whFIL-TB1eV5VSG0AOk2cYLEBfBovXoPuthsOlkvOs
+2025-12-04T22:19:06.475+08:00  INFO 17744 --- [http-nio-8080-exec-5] c.b.s.controller.BlogController          : 获取博客详情...
+2025-12-04T22:19:23.811+08:00  INFO 17744 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-04T22:19:23.936+08:00  INFO 17744 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-04T22:19:23.938+08:00  INFO 17744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-04T22:19:23.943+08:00  INFO 17744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
