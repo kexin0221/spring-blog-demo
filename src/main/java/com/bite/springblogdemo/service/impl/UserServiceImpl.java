@@ -26,12 +26,8 @@ public class UserServiceImpl implements UserService {
         queryWrapper.lambda().eq(UserInfo::getUserName, userLoginRequest.getUserName())
                 .eq(UserInfo::getDeleteFlag, 0);
         // 查询数据库
-        UserInfo userInfo = null;
-        try {
-            userInfo = userInfoMapper.selectOne(queryWrapper);
-        } catch (Exception e) {
-            log.error("查询出错, e: ", e);
-        }
+        UserInfo userInfo = userInfoMapper.selectOne(queryWrapper);
+
         // 用户不存在
         if (userInfo == null) {
             throw new BlogException("用户不存在");
