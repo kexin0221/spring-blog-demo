@@ -15,7 +15,7 @@ public class LoginInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String userToken = request.getHeader(Constants.USER_TOKEN_HEADER_KEY);
-        log.info("获取token: {}", userToken);
+        log.info("从header中获取token: {}", userToken);
         if (userToken == null) {
             // 拦截
             response.setStatus(401);
