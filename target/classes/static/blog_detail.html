@@ -42,7 +42,7 @@
             <div class="content">
                 <div class="title"></div>
                 <div class="date"></div>
-                <div class="detail">
+                <div class="detail" id="detail" style="background: transparent">
                 </div>
                 <div class="operating">
                     <button onclick="window.location.href='blog_update.html'">编辑</button>
@@ -63,7 +63,7 @@
     <script src="js/blog_detail.js"></script>
     <script>
         getBlogDetail();
-        getAuthorInfo();
+        getUserInfo("user/getAuthorInfo" + location.search);
         function deleteBlog() {
             alert("删除博客");
         }

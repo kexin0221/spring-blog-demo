@@ -20,15 +20,3 @@ function getBlogList() {
     });
 }
 
-function getUserInfo() {
-    $.ajax({
-        type: "get",
-        url: "user/getUserInfo?userId=" + localStorage.getItem("loginUserId"),
-        success: function (result) {
-            if (result != null && result.code === "SUCCESS" && result.data != null) {
-                $(".container .left .card h3").text(result.data.userName);
-                $(".container .left .card a").attr("href", result.data.githubUrl)
-            }
-        }
-    });
-}

@@ -45,7 +45,7 @@
     <script src="js/blog_list.js"></script>
     <script>
         getBlogList();
-        getUserInfo();
+        getUserInfo("user/getUserInfo?userId=" + localStorage.getItem("loginUserId"));
     </script>
 </body>
 </html>

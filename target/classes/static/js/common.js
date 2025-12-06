@@ -8,3 +8,22 @@ $(document).ajaxError(function(event, xhr, options, exc){
         location.href = "blog_login.html";
     }
 })
+
+function getUserInfo(url) {
+    $.ajax({
+        type: "get",
+        url: url,
+        success: function (result) {
+            if (result != null && result.code === "SUCCESS" && result.data != null) {
+                $(".container .left .card h3").text(result.data.userName);
+                $(".container .left .card a").attr("href", result.data.githubUrl);
+            }
+        }
+    });
+}
+
+function logout() {
+    localStorage.removeItem("loginUserId");
+    localStorage.removeItem("userToken");
+    location.href = "blog_login.html";
+}
