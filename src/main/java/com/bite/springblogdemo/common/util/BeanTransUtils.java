@@ -2,6 +2,7 @@ package com.bite.springblogdemo.common.util;
 
 import com.bite.springblogdemo.pojo.dataobject.BlogInfo;
 import com.bite.springblogdemo.pojo.dataobject.UserInfo;
+import com.bite.springblogdemo.pojo.request.UpdateBlogRequest;
 import com.bite.springblogdemo.pojo.response.BlogInfoResponse;
 import com.bite.springblogdemo.pojo.response.UserInfoResponse;
 import org.springframework.beans.BeanUtils;
@@ -23,5 +24,14 @@ public class BeanTransUtils {
         UserInfoResponse response = new UserInfoResponse();
         BeanUtils.copyProperties(userInfo, response);
         return response;
+    }
+
+    public static BlogInfo trans(UpdateBlogRequest updateBlogRequest) {
+        if (updateBlogRequest == null) {
+            return null;
+        }
+        BlogInfo blogInfo = new BlogInfo();
+        BeanUtils.copyProperties(updateBlogRequest, blogInfo);
+        return blogInfo;
     }
 }

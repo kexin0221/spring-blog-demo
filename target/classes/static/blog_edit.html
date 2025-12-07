@@ -39,7 +39,7 @@
 <script type="text/javascript">
 
     $(function () {
-        const editor = editormd("editor", {
+        var editor = editormd("editor", {
             width: "100%",
             height: "550px",
             path: "blog-editormd/lib/"
@@ -49,17 +49,17 @@
     function submit() {
         $.ajax({
             type: "post",
-            url: "blog/add",
+            url: "/blog/add",
             contentType: "application/json",
-            data: JSON.stringify({
+            data:JSON.stringify({
                 userId: localStorage.getItem("loginUserId"),
                 title: $("#title").val(),
                 content: $("#content").val()
             }),
-            success: function (result) {
-                if (result != null && result.code === "SUCCESS" && result.data === true) {
+            success:function(result){
+                if(result.code==="SUCCESS" && result.data===true){
                     location.href = "blog_list.html";
-                } else {
+                }else{
                     alert("博客发布失败");
                 }
             }

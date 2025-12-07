@@ -1,6 +1,7 @@
 package com.bite.springblogdemo.controller;
 
 import com.bite.springblogdemo.pojo.request.AddBlogRequest;
+import com.bite.springblogdemo.pojo.request.UpdateBlogRequest;
 import com.bite.springblogdemo.pojo.response.BlogInfoResponse;
 import com.bite.springblogdemo.pojo.response.Result;
 import com.bite.springblogdemo.service.BlogService;
@@ -42,5 +43,27 @@ public class BlogController {
     public Boolean addBlog(@RequestBody @Validated AddBlogRequest addBlogRequest) {
         log.info("添加博客, userId: {} title: {}", addBlogRequest.getUserId(), addBlogRequest.getTitle());
         return blogService.addBlog(addBlogRequest);
+    }
+
+    /**
+     * 更新博客
+     * @param updateBlogRequest 更新博客信息
+     * @return true-成功  false-失败
+     */
+    @RequestMapping("/update")
+    public Boolean updateBlog(@RequestBody @Validated UpdateBlogRequest updateBlogRequest) {
+        log.info("更新博客, request: {}", updateBlogRequest);
+        return blogService.updateBlog(updateBlogRequest);
+    }
+
+    /**
+     * 删除博客
+     * @param blogId 博客Id
+     * @return true-成功  false-失败
+     */
+    @RequestMapping("/delete")
+    public Boolean deleteBlog(Integer blogId) {
+        log.info("删除博客, blogId: {}", blogId);
+        return blogService.deleteBlog(blogId);
     }
 }

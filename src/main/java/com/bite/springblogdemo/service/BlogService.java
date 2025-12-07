@@ -2,6 +2,7 @@ package com.bite.springblogdemo.service;
 
 import com.bite.springblogdemo.pojo.dataobject.BlogInfo;
 import com.bite.springblogdemo.pojo.request.AddBlogRequest;
+import com.bite.springblogdemo.pojo.request.UpdateBlogRequest;
 import com.bite.springblogdemo.pojo.response.BlogInfoResponse;
 
 import java.util.List;
@@ -14,4 +15,8 @@ public interface BlogService {
     BlogInfo getBlogInfo(Integer blogId);
 
     Boolean addBlog(AddBlogRequest addBlogRequest);
+
+    Boolean updateBlog(UpdateBlogRequest updateBlogRequest);
+
+    Boolean deleteBlog(Integer blogId);
 }
