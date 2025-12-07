@@ -63,7 +63,7 @@
 <script>
     getBlogDetail();
 
-    var url = "/user/getAuthorInfo" + location.search;
+    const url = "/user/getAuthorInfo" + location.search;
     getUserInfo(url);
 
     function getBlogDetail() {
@@ -78,7 +78,6 @@
                 if (result.code === "SUCCESS" && result.data != null) {
                     $(".content .title").text(result.data.title);
                     $(".content .date").text(result.data.createTime);
-                    // $(".content .detail").text(result.data.content);
                     editormd.markdownToHTML("detail", {
                         markdown: result.data.content,
                     });
@@ -86,7 +85,6 @@
                     //判断是否显示编辑/删除按钮
                     let loginUserId = localStorage.getItem("loginUserId");
                     if(parseInt(result.data.userId) === parseInt(loginUserId)) {
-                        //当前作者是登录用户, 显示按钮
                         let blogId = result.data.id;
                         let finalHtml = '<button onclick="window.location.href=\'blog_update.html?blogId='+blogId+'\'">编辑</button>';
                         finalHtml += '<button onclick="deleteBlog('+blogId+')">删除</button>';
