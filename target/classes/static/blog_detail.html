@@ -45,8 +45,6 @@
             <div class="detail" id="detail" style="background: transparent;">
             </div>
             <div class="operating">
-                <!-- <button onclick="window.location.href='blog_update.html'">编辑</button>
-                <button onclick="deleteBlog()">删除</button> -->
             </div>
         </div>
 
@@ -63,7 +61,7 @@
 <script>
     getBlogDetail();
 
-    var url = "/user/getAuthorInfo" + location.search;
+    const url = "/user/getAuthorInfo" + location.search;
     getUserInfo(url);
 
     function getBlogDetail() {
@@ -78,7 +76,6 @@
                 if (result.code === "SUCCESS" && result.data != null) {
                     $(".content .title").text(result.data.title);
                     $(".content .date").text(result.data.createTime);
-                    // $(".content .detail").text(result.data.content);
                     editormd.markdownToHTML("detail", {
                         markdown: result.data.content,
                     });
@@ -86,11 +83,10 @@
                     //判断是否显示编辑/删除按钮
                     let loginUserId = localStorage.getItem("loginUserId");
                     if(parseInt(result.data.userId) === parseInt(loginUserId)) {
-                        //当前作者是登录用户, 显示按钮
-                        let blogId = result.data.id;
-                        let finalHtml = '<button onclick="window.location.href=\'blog_update.html?blogId='+blogId+'\'">编辑</button>';
-                        finalHtml += '<button onclick="deleteBlog('+blogId+')">删除</button>';
-                        console.log(finalHtml);
+                        let finalHtml = '';
+                        finalHtml += '<button onclick="window.location.href=\'blog_update.html?blogId='+
+                            result.data.id + '\'">编辑</button>'
+                        finalHtml += '<button onclick="deleteBlog(' + result.data.id + ')">删除</button>';
                         $(".content .operating").html(finalHtml);
                     }
                 }
@@ -98,25 +94,19 @@
         });
     }
 
-
-    //显示博客作者信息
-    //var userUrl = "/user/getAuthorInfo" + location.search;
-    //getUserInfo(userUrl);
-
     function deleteBlog(blogId) {
         $.ajax({
             type: "post",
             url: "/blog/delete?blogId=" + blogId,
             success: function(result){
-                if(result.code ==="SUCCESS" && result.data===true){
+                if(result.code === "SUCCESS" && result.data === true){
                     //删除成功
                     location.href = "blog_list.html";
                 }else{
-                    //TODO 自行完善
+                    alert(result.errMsg)
                 }
             }
         });
-        alert("删除博客");
     }
 </script>
 </body>

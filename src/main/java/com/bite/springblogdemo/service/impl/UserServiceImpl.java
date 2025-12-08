@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.bite.springblogdemo.common.exception.BlogException;
 import com.bite.springblogdemo.common.util.BeanTransUtils;
 import com.bite.springblogdemo.common.util.JwtUtils;
+import com.bite.springblogdemo.common.util.SecurityUtils;
 import com.bite.springblogdemo.mapper.UserInfoMapper;
 import com.bite.springblogdemo.pojo.dataobject.BlogInfo;
 import com.bite.springblogdemo.pojo.dataobject.UserInfo;
@@ -41,7 +42,7 @@ public class UserServiceImpl implements UserService {
             throw new BlogException("用户不存在");
         }
         // 密码错误
-        if (!userInfo.getPassword().equals(userLoginRequest.getPassword())) {
+        if (SecurityUtils.verify(userInfo.getPassword(), userLoginRequest.getPassword())) {
             throw new BlogException("密码错误");
         }
         // 密码正确
