@@ -1,60 +1,22 @@
-2025-12-08T20:21:13.403+08:00  INFO 21336 --- [main] c.b.s.SpringBlogDemoApplication          : Starting SpringBlogDemoApplication using Java 17.0.17 with PID 21336 (D:\code\java\spring-blog-demo\target\classes started by MouKexin in D:\code\java\spring-blog-demo)
-2025-12-08T20:21:13.406+08:00  INFO 21336 --- [main] c.b.s.SpringBlogDemoApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-12-08T20:21:14.238+08:00  INFO 21336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-12-08T20:21:14.248+08:00  INFO 21336 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-08T20:21:14.248+08:00  INFO 21336 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
-2025-12-08T20:21:14.297+08:00  INFO 21336 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-12-08T20:21:14.297+08:00  INFO 21336 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 861 ms
-2025-12-08T20:21:15.013+08:00  INFO 21336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-12-08T20:21:15.019+08:00  INFO 21336 --- [main] c.b.s.SpringBlogDemoApplication          : Started SpringBlogDemoApplication in 2.251 seconds (process running for 3.077)
-2025-12-08T21:45:13.393+08:00  INFO 21336 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-08T21:45:13.519+08:00  INFO 21336 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-12-08T21:45:16.397+08:00  INFO 23812 --- [main] c.b.s.SpringBlogDemoApplication          : Starting SpringBlogDemoApplication using Java 17.0.17 with PID 23812 (D:\code\java\spring-blog-demo\target\classes started by MouKexin in D:\code\java\spring-blog-demo)
-2025-12-08T21:45:16.398+08:00  INFO 23812 --- [main] c.b.s.SpringBlogDemoApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-12-08T21:45:16.961+08:00  INFO 23812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-12-08T21:45:16.969+08:00  INFO 23812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-08T21:45:16.969+08:00  INFO 23812 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
-2025-12-08T21:45:17.002+08:00  INFO 23812 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-12-08T21:45:17.002+08:00  INFO 23812 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 580 ms
-2025-12-08T21:45:17.430+08:00  INFO 23812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-12-08T21:45:17.436+08:00  INFO 23812 --- [main] c.b.s.SpringBlogDemoApplication          : Started SpringBlogDemoApplication in 1.345 seconds (process running for 1.69)
-2025-12-08T21:46:12.174+08:00  INFO 23812 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-08T21:46:12.330+08:00  INFO 23812 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-12-08T21:46:13.751+08:00  INFO 21792 --- [main] c.b.s.SpringBlogDemoApplication          : Starting SpringBlogDemoApplication using Java 17.0.17 with PID 21792 (D:\code\java\spring-blog-demo\target\classes started by MouKexin in D:\code\java\spring-blog-demo)
-2025-12-08T21:46:13.753+08:00  INFO 21792 --- [main] c.b.s.SpringBlogDemoApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-12-08T21:46:14.536+08:00  INFO 21792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-12-08T21:46:14.544+08:00  INFO 21792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-08T21:46:14.544+08:00  INFO 21792 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
-2025-12-08T21:46:14.581+08:00  INFO 21792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-12-08T21:46:14.582+08:00  INFO 21792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 796 ms
-2025-12-08T21:46:15.045+08:00  INFO 21792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-12-08T21:46:15.052+08:00  INFO 21792 --- [main] c.b.s.SpringBlogDemoApplication          : Started SpringBlogDemoApplication in 1.666 seconds (process running for 2.104)
-2025-12-08T21:46:25.019+08:00  INFO 21792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-08T21:46:25.020+08:00  INFO 21792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-08T21:46:25.024+08:00  INFO 21792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-12-08T21:46:25.287+08:00  INFO 21792 --- [http-nio-8080-exec-4] c.b.s.c.interceptor.LoginInterceptor     : 从header中获取token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiJ9.3whFIL-TB1eV5VSG0AOk2cYLEBfBovXoPuthsOlkvOs
-2025-12-08T21:46:25.287+08:00  INFO 21792 --- [http-nio-8080-exec-10] c.b.s.c.interceptor.LoginInterceptor     : 从header中获取token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiJ9.3whFIL-TB1eV5VSG0AOk2cYLEBfBovXoPuthsOlkvOs
-2025-12-08T21:46:25.519+08:00  INFO 21792 --- [http-nio-8080-exec-4] c.b.s.controller.BlogController          : 查询博客列表...
-2025-12-08T21:46:25.674+08:00  INFO 21792 --- [http-nio-8080-exec-10] c.b.s.controller.UserController          : 获取用户信息, userId: 1
-2025-12-08T21:46:25.783+08:00  INFO 21792 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-08T21:46:26.233+08:00  INFO 21792 --- [http-nio-8080-exec-10] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f7ed15b
-2025-12-08T21:46:26.238+08:00  INFO 21792 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-08T21:46:38.787+08:00  INFO 21792 --- [http-nio-8080-exec-5] c.b.s.controller.UserController          : 用户登录，用户名: zhangsan
-2025-12-08T21:46:38.889+08:00  INFO 21792 --- [http-nio-8080-exec-2] c.b.s.c.interceptor.LoginInterceptor     : 从header中获取token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiJ9.3whFIL-TB1eV5VSG0AOk2cYLEBfBovXoPuthsOlkvOs
-2025-12-08T21:46:38.889+08:00  INFO 21792 --- [http-nio-8080-exec-3] c.b.s.c.interceptor.LoginInterceptor     : 从header中获取token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiJ9.3whFIL-TB1eV5VSG0AOk2cYLEBfBovXoPuthsOlkvOs
-2025-12-08T21:46:38.894+08:00  INFO 21792 --- [http-nio-8080-exec-3] c.b.s.controller.UserController          : 获取用户信息, userId: 1
-2025-12-08T21:46:38.895+08:00  INFO 21792 --- [http-nio-8080-exec-2] c.b.s.controller.BlogController          : 查询博客列表...
-2025-12-08T21:46:43.035+08:00  INFO 21792 --- [http-nio-8080-exec-9] c.b.s.c.interceptor.LoginInterceptor     : 从header中获取token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiJ9.3whFIL-TB1eV5VSG0AOk2cYLEBfBovXoPuthsOlkvOs
-2025-12-08T21:46:43.036+08:00  INFO 21792 --- [http-nio-8080-exec-5] c.b.s.c.interceptor.LoginInterceptor     : 从header中获取token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiJ9.3whFIL-TB1eV5VSG0AOk2cYLEBfBovXoPuthsOlkvOs
-2025-12-08T21:46:43.044+08:00  INFO 21792 --- [http-nio-8080-exec-5] c.b.s.controller.UserController          : 获取作者信息, blogId: 1
-2025-12-08T21:46:43.049+08:00  INFO 21792 --- [http-nio-8080-exec-9] c.b.s.controller.BlogController          : 获取博客详情...
-2025-12-08T21:46:44.613+08:00  INFO 21792 --- [http-nio-8080-exec-3] c.b.s.c.interceptor.LoginInterceptor     : 从header中获取token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiJ9.3whFIL-TB1eV5VSG0AOk2cYLEBfBovXoPuthsOlkvOs
-2025-12-08T21:46:44.619+08:00  INFO 21792 --- [http-nio-8080-exec-3] c.b.s.controller.BlogController          : 删除博客, blogId: 1
-2025-12-08T21:46:44.679+08:00  INFO 21792 --- [http-nio-8080-exec-8] c.b.s.c.interceptor.LoginInterceptor     : 从header中获取token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiJ9.3whFIL-TB1eV5VSG0AOk2cYLEBfBovXoPuthsOlkvOs
-2025-12-08T21:46:44.679+08:00  INFO 21792 --- [http-nio-8080-exec-2] c.b.s.c.interceptor.LoginInterceptor     : 从header中获取token: eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiJ9.3whFIL-TB1eV5VSG0AOk2cYLEBfBovXoPuthsOlkvOs
-2025-12-08T21:46:44.685+08:00  INFO 21792 --- [http-nio-8080-exec-2] c.b.s.controller.BlogController          : 查询博客列表...
-2025-12-08T21:46:44.685+08:00  INFO 21792 --- [http-nio-8080-exec-8] c.b.s.controller.UserController          : 获取用户信息, userId: 1
-2025-12-08T21:46:53.697+08:00  INFO 21792 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-08T21:46:54.489+08:00  INFO 21792 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-12-08T21:46:54.497+08:00  INFO 21792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-08T21:46:54.514+08:00  INFO 21792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-10T17:20:02.774+08:00  INFO 44036 --- [main] c.b.s.SpringBlogDemoApplication          : Starting SpringBlogDemoApplication using Java 17.0.17 with PID 44036 (D:\code\java\spring-blog-demo\target\classes started by MouKexin in D:\code\java\spring-blog-demo)
+2025-12-10T17:20:02.779+08:00  INFO 44036 --- [main] c.b.s.SpringBlogDemoApplication          : The following 1 profile is active: "prod"
+2025-12-10T17:20:03.523+08:00  INFO 44036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-10T17:20:03.531+08:00  INFO 44036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-10T17:20:03.531+08:00  INFO 44036 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-10T17:20:03.573+08:00  INFO 44036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-10T17:20:03.573+08:00  INFO 44036 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 756 ms
+2025-12-10T17:20:04.105+08:00  INFO 44036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-10T17:20:04.114+08:00  INFO 44036 --- [main] c.b.s.SpringBlogDemoApplication          : Started SpringBlogDemoApplication in 1.771 seconds (process running for 2.242)
+2025-12-10T20:43:49.541+08:00  INFO 44036 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-10T20:43:49.670+08:00  INFO 44036 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-10T20:43:53.471+08:00  INFO 45980 --- [main] c.b.s.SpringBlogDemoApplication          : Starting SpringBlogDemoApplication using Java 17.0.17 with PID 45980 (D:\code\java\spring-blog-demo\target\classes started by MouKexin in D:\code\java\spring-blog-demo)
+2025-12-10T20:43:53.473+08:00  INFO 45980 --- [main] c.b.s.SpringBlogDemoApplication          : The following 1 profile is active: "dev"
+2025-12-10T20:43:54.237+08:00  INFO 45980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-10T20:43:54.245+08:00  INFO 45980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-10T20:43:54.246+08:00  INFO 45980 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-10T20:43:54.281+08:00  INFO 45980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-10T20:43:54.283+08:00  INFO 45980 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 770 ms
+2025-12-10T20:43:54.743+08:00  INFO 45980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-10T20:43:54.751+08:00  INFO 45980 --- [main] c.b.s.SpringBlogDemoApplication          : Started SpringBlogDemoApplication in 1.649 seconds (process running for 2.204)
+2025-12-10T21:04:38.792+08:00  INFO 45980 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-10T21:04:39.424+08:00  INFO 45980 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
