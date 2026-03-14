@@ -9,3 +9,14 @@
 2026-03-14T21:09:41.858+08:00  INFO 25636 --- [main] c.b.s.SpringBlogDemoApplication          : Started SpringBlogDemoApplication in 1.646 seconds (process running for 2.084)
 2026-03-14T21:10:03.243+08:00  INFO 25636 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
 2026-03-14T21:10:03.505+08:00  INFO 25636 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-14T21:12:25.879+08:00  INFO 23852 --- [main] c.b.s.SpringBlogDemoApplication          : Starting SpringBlogDemoApplication using Java 17.0.18 with PID 23852 (D:\code\java\spring-blog-demo\target\classes started by MouKexin in D:\code\java\spring-blog-demo)
+2026-03-14T21:12:25.881+08:00  INFO 23852 --- [main] c.b.s.SpringBlogDemoApplication          : The following 1 profile is active: "prod"
+2026-03-14T21:12:26.526+08:00  INFO 23852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-14T21:12:26.537+08:00  INFO 23852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-14T21:12:26.538+08:00  INFO 23852 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
+2026-03-14T21:12:26.582+08:00  INFO 23852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-14T21:12:26.583+08:00  INFO 23852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 671 ms
+2026-03-14T21:12:27.070+08:00  INFO 23852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-14T21:12:27.076+08:00  INFO 23852 --- [main] c.b.s.SpringBlogDemoApplication          : Started SpringBlogDemoApplication in 1.57 seconds (process running for 1.938)
+2026-03-14T21:21:45.023+08:00  INFO 23852 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-14T21:21:45.140+08:00  INFO 23852 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
